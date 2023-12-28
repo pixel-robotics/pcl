@@ -101,7 +101,7 @@ if(CMAKE_COMPILER_IS_GNUCXX)
     else()
       string(APPEND CMAKE_CXX_FLAGS " -Wabi")
     endif()
-    string(APPEND CMAKE_CXX_FLAGS " -Wall -Wextra -Wno-unknown-pragmas -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare -Wno-invalid-offsetof -Wno-conversion ${SSE_FLAGS} ${AVX_FLAGS}")
+    string(APPEND CMAKE_CXX_FLAGS " -Wall -Wextra -Wno-unknown-pragmas -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare -Wno-invalid-offsetof -Wno-conversion")
   endif()
 
   if(PCL_WARNINGS_ARE_ERRORS)
